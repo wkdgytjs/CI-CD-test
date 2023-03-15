@@ -52,7 +52,7 @@ public class UserController {
 
     @PostMapping("/update/{id}")
     public String updateUser(@PathVariable("id") long id, @Valid UserEntity userEntity,
-                             BindingResult result, Model model) {
+                             BindingResult result,   Model model) {
         if (result.hasErrors()) {
             userEntity.setId(id);
             return "update-user";
