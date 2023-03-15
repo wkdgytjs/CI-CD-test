@@ -7,10 +7,10 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://RDSDB:3306/bootex
+    url: jdbc:mysql://ec2-mysql-db1.cy1giep8fwh3.ap-northeast-2.rds.amazonaws.com:3306/bootex
 
-    username: mysqlID
-    password: mysqlPW
+    username: admin
+    password: mydbpassword
 
   jpa:
     #    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
